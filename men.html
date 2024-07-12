@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Flare Men</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+        rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl fixed-top mb-5">
+        <div class="container-fluid">
+            <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#shirt-section">Shirt</a></li>
+                            <li><a class="dropdown-item" href="#longpant-section">Long Pant</a></li>
+                            <li><a class="dropdown-item" href="#shortpant-section">Short Pant</a></li>
+                            <li><a class="dropdown-item " href="#shoe-section">Shoe</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="navbar-brand text-dark brand_name" href="#">Fashion Flare</a>
+            <form class="d-flex d-none d-md-flex me-5 mt-1" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn" type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </form>
+            <div class="d-md-none me-5 mt-1 search_bar">
+                <button class="btn search-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#searchBar"
+                    aria-controls="searchBar" aria-expanded="false" aria-label="Toggle search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <a href="cart.html" class="btn me-auto d-inline-block cart-icon" aria-label="Cart">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="collapse d-md-none searchbar" id="searchBar">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn" type="button">
+                    search
+                </button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- Body -->
+
+    <!-- Cover Photo Section -->
+    <!-- <div class="container-fluid w-100 mt-5">
+        <div class="cover-photo d-flex justify-content-between">
+            <div class="">
+                <div class="">
+                    
+                </div>
+
+                <div class="cover-photo">
+                    <img src="img/men-carousel/men/discount/mencover.jpg"
+                        style="height: 100%; width: 100%; background-size:cover; background-position: center;" alt="">
+                        <h3 class="card-img-overlay top-50 ms-4">Save Up To Your Money With<br>The Following Items</h3>
+                    </div>
+            </div>
+
+        </div>
+    </div> -->
+    <div class="cover-photo mt-5 d-flex justify-content-center">
+        <div class="card w-100">
+            <img src="images/men-carousel/mencover.png" alt="">
+            <div class="card-img-overlay d-flex flex-column justify-content-center">
+                <h3 class="card-text" id="text-image-float">Save Up To Your Money With<br>The Following Items</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Discount Items Section -->
+
+    <div class="discount-container mt-3 mb-5" id="discount">
+        <div class="category-header mt-5 mb-5">
+            <a href="#">Discount Items</a>
+        </div>
+        <div id="discountItemsCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-inner ">
+                <!-- First Slide -->
+                <div class="carousel-item active">
+                    <div class="row g-3">
+                        <!-- Card 1 -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="card">
+                                <p class="discount-percent">-20%</p>
+                                <img src="images/men-carousel/men/discount/discount-3.jpg" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Longsleeve<br>Shirt (M)</h5>
+                                    <p>
+                                        <del class="card-text">26,000MMK</del>
+                                        <span class="card-text text-danger ms-1 fw-semibold">20800MMK</span>
+                                    </p>
+
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                                        <div class="icons">
+                                            <a href="#" class="me-2"><i class="fas fa-share-alt"
+                                                    style="size: 1rem;"></i></a>
+                                            <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="card">
+                                <p class="discount-percent">-30%</p>
+                                <img src="images/men-carousel/men/discount/product-8.jpg" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Polo<br>Shirt (M)</h5>
+                                    <p>
+                                        <del class="card-text">36,000MMK</del>
+                                        <span class="card-text text-danger ms-1 fw-semibold">25200MMK</span>
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                                        <div class="icons">
+                                            <a href="#" class="me-2"><i class="fas fa-share-alt"
+                                                    style="size: 1rem;"></i></a>
+                                            <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="card">
+                                <p class="discount-percent">-50%</p>
+                                <img src="images/men-carousel/men/discount/adidas-men-shoe.png" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Adidas<br>Running Shoe (M)</h5>
+                                    <p>
+                                        <del class="card-text">240,000MMK</del>
+                                        <span class="card-text text-danger ms-1 fw-semibold">120,000MMK</span>
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                                        <div class="icons">
+                                            <a href="#" class="me-2"><i class="fas fa-share-alt"
+                                                    style="size: 1rem;"></i></a>
+                                            <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="card">
+                                <p class="discount-percent">-40%</p>
+                                <img src="images/men-carousel/men/discount/shoe-8.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">KuMa<br>Sport Shoe (M)</h5>
+                                    <p>
+                                        <del class="card-text">126,000MMK</del>
+                                        <span class="card-text text-danger ms-1 fw-semibold">75,600MMK</span>
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                                        <div class="icons">
+                                            <a href="#" class="me-2"><i class="fas fa-share-alt"
+                                                    style="size: 1rem;"></i></a>
+                                            <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Second Slide -->
+                <div class="carousel-item">
+                    <div class="row g-3">
+                        <!-- Card 5 -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="card">
+                                <p class="discount-percent">-50%</p>
+                                <img src="images/men-carousel/men/discount/discount-8.jpg" class="card-img-top"
+                                    alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Old Skool<br>Shoe (M)</h5>
+                                    <p>
+                                        <del class="card-text">103,000MMK</del>
+                                        <span class="card-text text-danger ms-1 fw-semibold">51,500MMK</span>
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                                        <div class="icons">
+                                            <a href="#" class="me-3"><i class="fas fa-share-alt"
+                                                    style="size: 1rem;"></i></a>
+                                            <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 6 -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="card">
+                                <p class="discount-percent">-60%</p>
+                                <img src="images/men-carousel/men/discount/short-9.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Linen<br>Short Pant</h5>
+                                    <p>
+                                        <del class="card-text">56,000MMK</del>
+                                        <span class="card-text text-danger ms-1 fw-semibold">22,400MMK</span>
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                                        <div class="icons">
+                                            <a href="#" class="me-3"><i class="fas fa-share-alt"
+                                                    style="size: 1rem;"></i></a>
+                                            <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 7 -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="card">
+                                <p class="discount-percent">-40%</p>
+                                <img src="images/men-carousel/men/discount/short-3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cargo<br>Short Pant</h5>
+                                    <p>
+                                        <del class="card-text">36,000MMK</del>
+                                        <span class="card-text text-danger ms-1 fw-semibold">21,600MMK</span>
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                                        <div class="icons">
+                                            <a href="#" class="me-3"><i class="fas fa-share-alt"
+                                                    style="size: 1rem; color: black;"></i></a>
+                                            <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 8 -->
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="card">
+                                <p class="discount-percent">-40%</p>
+                                <img src="images/men-carousel/men/discount/short-7.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cargo<br>Short Pant</h5>
+                                    <p>
+                                        <del class="card-text">46,000MMK</del>
+                                        <span class="card-text text-danger ms-1 fw-semibold">27,600MMK</span>
+                                    </p>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                                        <div class="icons">
+                                            <a href="#" class="me-3"><i class="fas fa-share-alt"
+                                                    style="size: 1rem;"></i></a>
+                                            <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#discountItemsCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#discountItemsCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- T-Shirt Section -->
+    <div class="container my-3" id="shirt">
+        <div class="category-header mt-5 mb-5">
+            <a href="#" id="shirt-section">Shirt</a>
+        </div>
+        <div class="row g-3">
+            <!-- Card Template (8 cards for T-Shirt) -->
+            <div class="col-6 col-md-6 col-lg-3" *ngFor="let item of tshirtItems">
+                <div class="card">
+                    <img src="images/men-carousel/men/t-shirt/product-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Cargo<br>Shirt</h6>
+                        <p class="card-text">38,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-6 col-lg-3 " *ngFor="let item of tshirtItems">
+                <div class="card">
+
+                    <img src="images/men-carousel/men/t-shirt/product-4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Brownie<br>Two Way Shirt</h6>
+                        <p class="card-text">56,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 " *ngFor="let item of tshirtItems">
+                <div class="card">
+                    <img src="images/men-carousel/men/t-shirt/product-5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Box<br>Printed Tee</h6>
+                        <p class="card-text">16,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 " *ngFor="let item of tshirtItems">
+                <div class="card">
+                    <img src="images/giordano-logo-printed-tee.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Giordano<br>Printed Tee</h6>
+                        <p class="card-text">28,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-2" *ngFor="let item of tshirtItems">
+                <div class="card">
+                    <img src="images/men-carousel/men/t-shirt/product-9.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">ZM20<br>Printed Tee</h6>
+                        <p class="card-text">36,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-2" *ngFor="let item of tshirtItems">
+                <div class="card">
+                    <img src="images/Essentials_Big_Logo_Tee_Black_GK9120_01_laydown.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Adidas<br>Essentials Tee</h6>
+                        <p class="card-text">89,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-2" *ngFor="let item of tshirtItems">
+                <div class="card">
+                    <img src="images/uniqlo-long-sleeve-shirt.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Uniqlo<br>Longsleeve Shirt</h6>
+                        <p class="card-text">35,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-2" *ngFor="let item of tshirtItems">
+                <div class="card">
+                    <img src="images/new-arrival-pokemon-uniqlo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Uniqlo<br>Tee x Pokemon</h6>
+                        <p class="card-text">45,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Repeat similar cards for remaining 7 T-Shirts -->
+        </div>
+    </div>
+
+    <!-- Long Pant Section -->
+    <div class="container mb-3" id="long">
+        <div class="category-header mt-5 mb-5">
+            <a href="#" id="longpant-section">Long Pant</a>
+        </div>
+        <div class="row" id="photo-height">
+            <!-- Card Template (8 cards for Long Pant) -->
+            <div class="col-6 col-md-4 col-lg-3 mb-2" *ngFor="let item of longPantItems">
+                <div class="card">
+                    <img src="images/men-carousel/men/long-pant/long-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Drawstring<br>Easy Pant</h6>
+                        <p class="card-text">62,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-2" *ngFor="let item of longPantItems">
+                <div class="card">
+                    <img src="images/men-carousel/men/long-pant/long-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Chien<br>Style Pant</h6>
+                        <p class="card-text">89,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-2" *ngFor="let item of longPantItems">
+                <div class="card">
+                    <img src="images/men-carousel/men/long-pant/long-4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Vion<br>Style Pant</h6>
+                        <p class="card-text">37,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-2" *ngFor="let item of longPantItems">
+                <div class="card">
+                    <img src="images/men-carousel/men/long-pant/long-5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Poien<br>Style Pant</h6>
+                        <p class="card-text">54,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4" *ngFor="let item of longPantItems">
+                <div class="card">
+                    <img src="images/puma-teamfinal-21-casuals-pants.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Puma<br>Casual Pant</h6>
+                        <p class="card-text">126,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4" *ngFor="let item of longPantItems">
+                <div class="card">
+                    <img src="images/men-carousel/men/long-pant/long-7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Greyner<br>Style Pant</h6>
+                        <p class="card-text">62,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4" *ngFor="let item of longPantItems">
+                <div class="card">
+                    <img src="images/men-carousel/men/long-pant/long-6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Drawstring<br>Casual Pant</h6>
+                        <p class="card-text">23,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4" *ngFor="let item of longPantItems">
+                <div class="card">
+                    <img src="images/men-carousel/men/long-pant/long-9.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Drawstring<br>Long Pant</h6>
+                        <p class="card-text">32,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Repeat similar cards for remaining 7 Long Pants -->
+        </div>
+    </div>
+
+    <!-- Short Pant Section -->
+    <div class="container my-3" id="short">
+        <div class="category-header mt-5 mb-5">
+            <a href="#" id="shortpant-section">Short Pant</a>
+        </div>
+        <div class="row">
+            <!-- Card Template (8 cards for Short Pant) -->
+            <div class="col-6 col-md-6 col-lg-3 mb-2" *ngFor="let item of shortPantItems">
+                <div class="card">
+                    <img src="images/men-carousel/men/short-pant/short-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Kole<br>Cargo Short</h6>
+                        <p class="card-text">46,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-2" *ngFor="let item of shortPantItems">
+                <div class="card">
+                    <img src="images/men-carousel/men/short-pant/short-4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Chine<br>Not Short Not Long</h6>
+                        <p class="card-text">32,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-2" *ngFor="let item of shortPantItems">
+                <div class="card">
+                    <img src="images/nike-classic-woven-short.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Nike<br>Woven Short</h6>
+                        <p class="card-text">67,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-2" *ngFor="let item of shortPantItems">
+                <div class="card">
+                    <img src="images/men-carousel/men/short-pant/short-8.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Drawstring<br>Short  </h6>
+                        <p class="card-text">22,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-4" *ngFor="let item of shortPantItems">
+                <div class="card">
+                    <img src="images/men-carousel/men/short-pant/short-5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Balo<br>Easy Short</h6>
+                        <p class="card-text">37,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-4" *ngFor="let item of shortPantItems">
+                <div class="card">
+                    <img src="images/men-carousel/men/short-pant/short-6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Casual<br>Short</h6>
+                        <p class="card-text">21,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-4" *ngFor="let item of shortPantItems">
+                <div class="card">
+                    <img src="images/men-carousel/men/short-pant/short-10.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Tres<br>Easy Short</h6>
+                        <p class="card-text">31,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-6 col-lg-3 mb-4" *ngFor="let item of shortPantItems">
+                <div class="card">
+                    <img src="images/PUMA-TEAM-Men's-Relaxed-Shorts.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Puma<br>Relaxed Short</h6>
+                        <p class="card-text">124,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat similar cards for remaining 7 Short Pants -->
+        </div>
+    </div>
+
+    <!-- Shoe Section -->
+    <div class="container my-3" id="shoe">
+        <div class="category-header mt-5 mb-5">
+            <a href="#" id="shoe-section">Shoe</a>
+        </div>
+        <div class="row">
+            <!-- Card Template (8 cards for Shoe) -->
+            <div class="col-6 col-md-4 col-lg-3 mb-2" *ngFor="let item of shoeItems">
+                <div class="card">
+                    <img src="images/men-carousel/men/shoe/shoe-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Skec<br>Walking Shoe</h6>
+                        <p class="card-text">39,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-2" *ngFor="let item of shoeItems">
+                <div class="card">
+                    <img src="images/PUMA-x-ONE-PIECE-Suede-Red-Haired-Shanks-Sneakers-Youth.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Puma<br>Suede x One Piece</h6>
+                        <p class="card-text">390,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-2" *ngFor="let item of shoeItems">
+                <div class="card">
+                    <img src="images/Ultraboost.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Adidas<br>Ultraboost Shoe</h6>
+                        <p class="card-text">674,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-2" *ngFor="let item of shoeItems">
+                <div class="card">
+                    <img src="images/men-carousel/men/shoe/shoe-4.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Chao<br>Sport Shoe</h6>
+                        <p class="card-text">45,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4" *ngFor="let item of shoeItems">
+                <div class="card">
+                    <img src="images/men-carousel/men/shoe/shoe-5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Slit<br>Walking Shoe</h6>
+                        <p class="card-text">53,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4" *ngFor="let item of shoeItems">
+                <div class="card">
+                    <img src="images/men-carousel/men/shoe/shoe-6.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Jog<br>Walking Shoe</h6>
+                        <p class="card-text">100,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4" *ngFor="let item of shoeItems">
+                <div class="card">
+                    <img src="images/vans-checkerboard.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">Vans<br>Checkerboard Shoe</h6>
+                        <p class="card-text">156,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 col-lg-3 mb-4" *ngFor="let item of shoeItems">
+                <div class="card">
+                    <img src="images/newbalance-550.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6 class="card-title fw-semibold">New Balance<br>550 Shoe</h6>
+                        <p class="card-text">430,000MMK</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div><a href="#" class="btn btn-primary">Buy Now</a></div>
+                            <div class="icons">
+                                <a href="#" class="me-3"><i class="fas fa-share-alt" style="size: 1rem;"></i></a>
+                                <a href="#" class="danger"><i class="fas fa-heart"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat similar cards for remaining 7 Shoes -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h5>Store Map</h5>
+                <p>
+                    <a href="#store-map">
+                        <i class="fas fa-map-marker-alt"></i> Find our stores
+                    </a>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h5>Shop</h5>
+                <p><a href="men.html">Men's Collection</a></p>
+                <p><a href="women.html">Women's Collection</a></p>
+            </div>
+            <div class="footer-section">
+                <h5>Support</h5>
+                <p>
+                    <a href="contact.html"> <i class="fas fa-envelope"></i> Contact </a>
+                </p>
+                <p>
+                    <a href="#privacy">Privacy&Policy</a>
+                </p>
+                <p>
+                    <a href="#terms">Terms & Conditions</a>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h5>Follow Us</h5>
+                <p>
+                    <a href="https://facebook.com" target="_blank" class="footer-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://instagram.com" target="_blank" class="footer-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="https://twitter.com" target="_blank" class="footer-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h5>FAQ</h5>
+                <p>
+                    <a href="#faq">Frequently Asked Questions</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-section text-center">
+            <h5>© 2024 Company, Inc</h5>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

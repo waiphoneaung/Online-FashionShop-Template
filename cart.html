@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Flare Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-xl fixed-top">
+        <div class="container-fluid">
+            <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="men.html">Men wears</a></li>
+                            <li><a class="dropdown-item" href="women.html">Women wears</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#new-arrivals">New Arrivals</a></li>
+                            <li><a class="dropdown-item" href="#feature-products">Feature Products</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <a class="navbar-brand text-dark brand_name" href="#">fashion flare</a>
+            <form class="d-flex d-none d-md-flex me-5 mt-1" role="search">
+                <input class="form-control me-2 d-md-none d-lg-flex" type="search" placeholder="Search"
+                    aria-label="Search">
+                <button class="btn" type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </form>
+            <div class="d-md-none me-5 mt-1 search_bar">
+                <button class="btn search-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#searchBar"
+                    aria-controls="searchBar" aria-expanded="false" aria-label="Toggle search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </div>
+
+            <a href="cart.html" class="btn me-auto d-inline-block cart-icon" aria-label="Cart">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div class="collapse d-md-none searchbar" id="searchBar">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn" type="button">
+                    search
+                </button>
+            </form>
+        </div>
+    </nav>
+    <div class="cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/UniqloxKaws.png" alt="Uniqlo">
+                        <div>
+                            <p>Uniqlo x Kaws Tee</p>
+                            <small>28,000MMK</small>
+                            <br>
+                            <a href="">Remove from cart</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>28,000MMK</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/new-arrival-pokemon-uniqlo.jpg" alt="Uniqlo">
+                        <div>
+                            <p>Uniqlo x Pokemon Tee</p>
+                            <small>45,000MMK</small>
+                            <br>
+                            <a href="">Remove from cart</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>45,000MMK</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/nike-classic-woven-short.jpg" alt="Nike">
+                        <div>
+                            <p>Nike Woven Short</p>
+                            <small>67,000MMK</small>
+                            <br>
+                            <a href="">Remove from cart</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>67,000MMK</td>
+            </tr>
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Total</td>
+                    <td>140,000MMK</td>
+                </tr>
+            </table>
+        </div>
+        <div class="cart-button">
+            <a href="index.html">Continue Shopping</a>
+            <a href="#">Order Now</a>
+        </div>
+    </div>
+    <footer class="mt-3">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h5>Store Map</h5>
+                <p>
+                    <a href="#store-map">
+                        <i class="fas fa-map-marker-alt"></i> Find our stores
+                    </a>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h5>Shop</h5>
+                <p><a href="men.html">Men's Collection</a></p>
+                <p><a href="women.html">Women's Collection</a></p>
+            </div>
+            <div class="footer-section">
+                <h5>Support</h5>
+                <p>
+                    <a href="contact.html"> <i class="fas fa-envelope"></i> Contact </a>
+                </p>
+                <p>
+                    <a href="#privacy">Privacy&Policy</a>
+                </p>
+                <p>
+                    <a href="#terms">Terms & Conditions</a>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h5>Follow Us</h5>
+                <p>
+                    <a href="https://facebook.com" target="_blank" class="footer-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://instagram.com" target="_blank" class="footer-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="https://twitter.com" target="_blank" class="footer-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h5>FAQ</h5>
+                <p>
+                    <a href="#faq">Frequently Asked Questions</a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-section text-center">
+            <h5>© 2024 Company, Inc</h5>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
